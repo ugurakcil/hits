@@ -11,7 +11,8 @@ During the development process of this launcher, care will be taken to keep it e
 ## Installation
 
 ```bash
-$ npm install
+git clone https://github.com/ugurakcil/hits.git
+npm install
 ```
 
 ## Usage
