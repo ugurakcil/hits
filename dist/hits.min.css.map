@@ -1,0 +1,1 @@
+{"version":3,"file":"hits.min.css","mappings":"AAEA,KACI,qBAAsB","sources":["webpack://hits/./src/styles/index.scss"],"sourcesContent":["@import '_variables.scss';\n\nbody{\n    background-color: pink;\n}"],"names":[],"sourceRoot":""}

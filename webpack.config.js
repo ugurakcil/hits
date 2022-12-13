@@ -7,7 +7,7 @@ module.exports = (env, argv) => {
   /**
    * Generic contants
    */
-  const projectName = 'datasins';
+  const projectName = 'hits';
 
   /**
    * Determine if is production mode from the command executed
@@ -17,6 +17,16 @@ module.exports = (env, argv) => {
   return {
     entry: './src/index.ts',
     devtool: 'source-map',
+    output: {
+        filename: isProduction ? projectName + '.min.js' : projectName + '.js',
+        path: path.resolve(__dirname, 'dist'),
+        library: {
+            name: projectName,
+            type: 'umd',
+            export: 'default',
+            umdNamedDefine: true
+        },
+    },
     module: {
         rules: [
             {
@@ -42,13 +52,9 @@ module.exports = (env, argv) => {
     resolve: {
       extensions: ['.tsx', '.ts', '.js'],
     },
-    output: {
-      filename: isProduction ? projectName + '.min.js' : projectName + '.js',
-      path: path.resolve(__dirname, 'dist'),
-    },
     plugins: [
       new HtmlWebpackPlugin({
-        title: 'our project',
+        title: projectName,
         template: 'src/index.html'
       }),
       new MiniCssExtractPlugin({

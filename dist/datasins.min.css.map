@@ -1,1 +1,0 @@
-{"version":3,"file":"datasins.min.css","mappings":"AAAA,KACI,qBAAsB,CACzB,EAGG,WAAY,CADhB,QAIQ,SAAS","sources":["webpack://start-ts/./src/index.scss"],"sourcesContent":["body{\n    background-color: pink;\n}\n\na{\n    color: black;\n    \n    &.hello{\n        color:red;\n    }\n}"],"names":[],"sourceRoot":""}

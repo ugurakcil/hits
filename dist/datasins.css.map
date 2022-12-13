@@ -1,1 +1,0 @@
-{"version":3,"file":"datasins.css","mappings":";;;AAAA;EACI,sBAAsB;;AAG1B;EACI,YAAY;EADhB;IAIQ,UAAS","sources":["webpack://start-ts/./src/index.scss"],"sourcesContent":["body{\n    background-color: pink;\n}\n\na{\n    color: black;\n    \n    &.hello{\n        color:red;\n    }\n}"],"names":[],"sourceRoot":""}
